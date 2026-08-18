@@ -1,4 +1,4 @@
-from calculadora import suma, resta, multiplicacion, division, obtener_mensaje_bienvenida
+from app import suma, resta, multiplicacion, division, obtener_mensaje_bienvenida
 
 def test_suma():
     assert suma(2, 3) == 5
