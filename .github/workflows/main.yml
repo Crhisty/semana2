@@ -27,8 +27,9 @@ jobs:
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-# 4. Ejecución de pruebas unitarias
-- name: Ejecutar pruebas unitarias
+    # 4. Ejecución de pruebas unitarias
+    # Nota: Como testapp.py usa 'assert', ejecutamos con python directamente
+    - name: Ejecutar pruebas unitarias
       run: |
         python testapp.py
 
